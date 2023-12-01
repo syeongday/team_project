@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
 
     ImageView imageView;
     Button button;
+    Button button1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
