@@ -16,10 +16,10 @@
         android:background="@drawable/border"
         android:text="\n\t\t안녕하세요. 고잉트립은 사용자가 선택
         \t\t하신 대륙 및 키워드에 따라 어울리는
-        \t\t여행지를 추천해드리는 어플입니다. 이
-        \t\t는 제작자의 ★주관적인 의견★이 반
-        \t\t영되어 있으므로 이 부분을 유의해주시
-        \t\t길 바랍니다.
+        \t\t여행지를 추천해드리는 어플입니다.
+        \t\t이는 제작자의 ★주관적인 의견★이
+        \t\t반영되어 있으므로 이 부분을 유의해
+        \t\t주시길 바랍니다.
         \n\t\t그럼 여행지를 찾으러 떠나볼까요 ~?"
         android:textSize="23sp"
         app:fontFamily="@font/mongmyfont"
