@@ -32,7 +32,7 @@
         android:layout_width="255dp"
         android:layout_height="53dp"
         android:layout_marginStart="76dp"
-        android:layout_marginTop="106dp"
+        android:layout_marginTop="114dp"
         android:layout_marginEnd="76dp"
         android:background="@drawable/border2"
         android:text="MY BOX"
@@ -117,5 +117,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/img" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="71dp"
+        android:text="동의하지 않으신 경우, 다음 사항으로 넘어가지 않습니다 :-)"
+        android:textSize="14sp"
+        app:fontFamily="@font/mongsugargothic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
