@@ -338,6 +338,7 @@
         android:textSize="20sp"
         app:backgroundTint="#FF9999"
         app:fontFamily="@font/mongmyfont"
+        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

@@ -2,6 +2,7 @@ package com.example.myapplication;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
@@ -26,7 +27,6 @@ public class SecondActivity extends Activity {
         TextView textView;
         ImageButton airplane;
 
-
         imageButton1 = (ImageButton)findViewById(R.id.imageButton1);
         imageButton2 = (ImageButton)findViewById(R.id.imageButton2);
         imageButton3 = (ImageButton)findViewById(R.id.imageButton3);
@@ -35,6 +35,9 @@ public class SecondActivity extends Activity {
         imageButton6 = (ImageButton)findViewById(R.id.imageButton6);
         textView = (TextView)findViewById(R.id.textView);
         airplane = (ImageButton)findViewById(R.id.imageButton7) ;
+
+        Typeface typeface = Typeface.createFromAsset(getAssets(),"mongmyfont.ttf");
+        textView.setTypeface(typeface);
 
         imageButton1.setOnClickListener(new View.OnClickListener() {
             @Override
