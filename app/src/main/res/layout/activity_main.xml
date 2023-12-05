@@ -51,7 +51,7 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="76dp"
         android:background="@drawable/border2"
-        android:text="자주 쓰는 문장 알아보기"
+        android:text="별점"
         android:textSize="22sp"
         app:backgroundTint="#5F9EA0"
         app:fontFamily="@font/mongmyfont"

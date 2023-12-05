@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -15,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
     CheckBox checkBox;
     Button start_button;
+    Button star;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
         checkBox = (CheckBox) findViewById(R.id.checkBox);
         start_button = (Button) findViewById(R.id.button3);
+        star = (Button) findViewById(R.id.button2);
 
         start_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,6 +34,14 @@ public class MainActivity extends AppCompatActivity {
                     Intent intent = new Intent(getApplicationContext(),SecondActivity.class);
                     startActivity(intent);
                 }
+            }
+        });
+
+        star.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                
+
             }
         });
     }
