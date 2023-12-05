@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="20dp"
+        android:text="가장 관심이 있는 키워드를 5개 선택해주세요
+\n\t\t\t\t카테고리별로 하나씩 골라주세요 :-)"
+        android:textSize="20sp"
+        app:fontFamily="@font/mongmyfont"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="371dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="21dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="60dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/border5"
+        android:gravity="center"
+        android:text="문화"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        app:fontFamily="@font/mongsugargothic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/btn13"
+        android:layout_width="87dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="13dp"
+        android:background="#FFFACD"
+        android:text="전통"
+        android:textColor="@color/black"
+        android:textSize="23sp"
+        app:backgroundTint="#FFFACD"
+        app:fontFamily="@font/mongsugargothic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <Button
+        android:id="@+id/btn14"
+        android:layout_width="87dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="13dp"
+        android:background="#FFFACD"
+        android:text="역사"
+        android:textColor="@color/black"
+        android:textSize="23sp"
+        app:backgroundTint="#FFFACD"
+        app:fontFamily="@font/mongsugargothic"
+        app:layout_constraintStart_toEndOf="@+id/btn13"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <Button
+        android:id="@+id/btn15"
+        android:layout_width="87dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="13dp"
+        android:background="#FFFACD"
+        android:text="종교"
+        android:textColor="@color/black"
+        android:textSize="23sp"
+        app:backgroundTint="#FFFACD"
+        app:fontFamily="@font/mongsugargothic"
+        app:layout_constraintStart_toEndOf="@+id/btn14"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <Button
+        android:id="@+id/btn16"
+        android:layout_width="87dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="13dp"
+        android:background="#FFFACD"
+        android:text="예술"
+        android:textColor="@color/black"
+        android:textSize="23sp"
+        app:backgroundTint="#FFFACD"
+        app:fontFamily="@font/mongsugargothic"
+        app:layout_constraintStart_toEndOf="@+id/btn15"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="60dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border5"
+        android:gravity="center"
+        android:text="기타"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        app:fontFamily="@font/mongsugargothic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn13" />
+
+    <Button
+        android:id="@+id/btn18"
+        android:layout_width="100dp"
+        android:layout_height="49dp"
+        android:background="#FFFACD"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="13dp"
+        android:text="호캉스"
+        android:textColor="@color/black"
+        android:textSize="23sp"
+        app:backgroundTint="#FFFACD"
+        app:fontFamily="@font/mongsugargothic"
+        app:layout_constraintStart_toEndOf="@+id/btn17"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <Button
+        android:id="@+id/btn19"
+        android:layout_width="100dp"
+        android:layout_height="49dp"
+        android:background="#FFFACD"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="13dp"
+        android:text="스포츠"
+        android:textColor="@color/black"
+        android:textSize="23sp"
+        app:backgroundTint="#FFFACD"
+        app:fontFamily="@font/mongsugargothic"
+        app:layout_constraintStart_toEndOf="@+id/btn18"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <Button
+        android:id="@+id/btn20"
+        android:layout_width="87dp"
+        android:layout_height="49dp"
+        android:background="#FFFACD"
+        android:text="쇼핑"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="13dp"
+        android:textColor="@color/black"
+        android:textSize="23sp"
+        app:backgroundTint="#FFFACD"
+        app:fontFamily="@font/mongsugargothic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn17" />
+
+    <Button
+        android:id="@+id/btn17"
+        android:layout_width="87dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="13dp"
+        android:background="#FFFACD"
+        android:text="시장"
+        android:textColor="@color/black"
+        android:textSize="23sp"
+        app:backgroundTint="#FFFACD"
+        app:fontFamily="@font/mongsugargothic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <Button
+        android:id="@+id/conc_btn"
+        android:layout_width="227dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/border4"
+        android:text="🔍 결과 보기 🔍"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:backgroundTint="#FF9999"
+        app:fontFamily="@font/mongmyfont"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pre_btn" />
+
+    <Button
+        android:id="@+id/pre_btn"
+        android:layout_width="120dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="428dp"
+        android:background="@drawable/border6"
+        android:text="이전 장"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:backgroundTint="#FFE4E1"
+        app:fontFamily="@font/mongmyfont"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
