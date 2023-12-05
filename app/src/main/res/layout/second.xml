@@ -96,7 +96,7 @@
         android:layout_marginTop="56dp"
         android:text="원하시는 대륙을 클릭하고 비행기를 누르세요"
         android:textSize="19sp"
-        android:layout_gravity="center"
+        android:gravity="center"
         app:fontFamily="@font/mongmyfont"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
