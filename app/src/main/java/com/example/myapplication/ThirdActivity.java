@@ -1,6 +1,8 @@
 package com.example.myapplication;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
@@ -10,168 +12,179 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class ThirdActivity extends Activity {
-    private Button[] btn = new Button[20];
-    private Integer[] btn_id = {R.id.btn1, R.id.btn2, R.id.btn3, R.id.btn4, R.id.btn5, R.id.btn6,
-            R.id.btn7, R.id.btn8, R.id.btn9, R.id.btn10, R.id.btn11, R.id.btn12,
-            R.id.btn13, R.id.btn14, R.id.btn15, R.id.btn16, R.id.btn17, R.id.btn18,
-            R.id.btn19, R.id.btn20};
-    Button next;
-    Button pre;
-    Button conc;
-    TextView textView2;
-
+    @SuppressLint("ClickableViewAccessibility")
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.third);
         setTitle("Third 액티비티");
 
-        for(int i=0; i < 20; i++) {
-            btn[i] = (Button)findViewById(btn_id[i]);
-        }
+        // 키워드 버튼 변수 선언 및 정의
+        Button btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btn10, btn11, btn12;
+        btn1 = findViewById(R.id.btn1);
+        btn2 = findViewById(R.id.btn2);
+        btn3 = findViewById(R.id.btn3);
+        btn4 = findViewById(R.id.btn4);
+        btn5 = findViewById(R.id.btn5);
+        btn6 = findViewById(R.id.btn6);
+        btn7 = findViewById(R.id.btn7);
+        btn8 = findViewById(R.id.btn8);
+        btn9 = findViewById(R.id.btn9);
+        btn10 = findViewById(R.id.btn10);
+        btn11 = findViewById(R.id.btn11);
+        btn12 = findViewById(R.id.btn12);
+
+        Button next;
+        TextView textView2;
 
         next = findViewById(R.id.next_btn);
-        pre = findViewById(R.id.pre_btn);
-        conc = findViewById(R.id.conc_btn);
         textView2 = findViewById(R.id.textView2);
 
+        // 폰트 적용
         Typeface typeface = Typeface.createFromAsset(getAssets(), "mongsugargothic.ttf");
-        for(int i=0; i<20; i++) {
-            btn[i].setTypeface(typeface);
-        }
+        btn1.setTypeface(typeface);
+        btn2.setTypeface(typeface);
+        btn3.setTypeface(typeface);
+        btn4.setTypeface(typeface);
+        btn5.setTypeface(typeface);
+        btn6.setTypeface(typeface);
+        btn7.setTypeface(typeface);
+        btn8.setTypeface(typeface);
+        btn9.setTypeface(typeface);
+        btn10.setTypeface(typeface);
+        btn11.setTypeface(typeface);
+        btn12.setTypeface(typeface);
 
         Typeface typeface1 = Typeface.createFromAsset(getAssets(), "mongmyfont.ttf");
         textView2.setTypeface(typeface1);
         next.setTypeface(typeface1);
-        pre.setTypeface(typeface1);
-        conc.setTypeface(typeface1);
 
-        // 버튼마다 색상 변경하는 거 배열로 간단하게 나타낼 순 없을까 .....
-        btn[0].setOnTouchListener(new View.OnTouchListener() {
+        // 버튼 클릭시 색상 변경
+        btn1.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View view, MotionEvent motionEvent) {
                 if (motionEvent.getAction() == MotionEvent.ACTION_UP) {
-                    btn[0].setBackgroundColor(Color.rgb(204, 255, 255));
-                }
-                return false;
-            }
-        });
-        /*bt1.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View view, MotionEvent motionEvent) {
-                if (motionEvent.getAction() == MotionEvent.ACTION_UP) {
-                    bt1.setBackgroundColor(Color.rgb(204, 255, 255));
+                    btn1.setBackgroundColor(Color.rgb(204, 255, 255));
                 }
                 return false;
             }
         });
 
-        bt2.setOnTouchListener(new View.OnTouchListener() {
+        btn2.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View view, MotionEvent motionEvent) {
                 if (motionEvent.getAction() == MotionEvent.ACTION_UP) {
-                    bt2.setBackgroundColor(Color.rgb(204, 255, 255));
+                    btn2.setBackgroundColor(Color.rgb(204, 255, 255));
                 }
                 return false;
             }
         });
 
-        bt3.setOnTouchListener(new View.OnTouchListener() {
+        btn3.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View view, MotionEvent motionEvent) {
                 if (motionEvent.getAction() == MotionEvent.ACTION_UP) {
-                    bt3.setBackgroundColor(Color.rgb(204, 255, 255));
+                    btn3.setBackgroundColor(Color.rgb(204, 255, 255));
                 }
                 return false;
             }
         });
 
-        bt4.setOnTouchListener(new View.OnTouchListener() {
+        btn4.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View view, MotionEvent motionEvent) {
                 if (motionEvent.getAction() == MotionEvent.ACTION_UP) {
-                    bt4.setBackgroundColor(Color.rgb(204, 255, 255));
+                    btn4.setBackgroundColor(Color.rgb(204, 255, 255));
                 }
                 return false;
             }
         });
 
-        bt5.setOnTouchListener(new View.OnTouchListener() {
+        btn5.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View view, MotionEvent motionEvent) {
                 if (motionEvent.getAction() == MotionEvent.ACTION_UP) {
-                    bt5.setBackgroundColor(Color.rgb(204, 255, 255));
+                    btn5.setBackgroundColor(Color.rgb(204, 255, 255));
                 }
                 return false;
             }
         });
 
-        bt6.setOnTouchListener(new View.OnTouchListener() {
+        btn6.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View view, MotionEvent motionEvent) {
                 if (motionEvent.getAction() == MotionEvent.ACTION_UP) {
-                    bt6.setBackgroundColor(Color.rgb(204, 255, 255));
+                    btn6.setBackgroundColor(Color.rgb(204, 255, 255));
                 }
                 return false;
             }
         });
 
-        bt7.setOnTouchListener(new View.OnTouchListener() {
+        btn7.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View view, MotionEvent motionEvent) {
                 if (motionEvent.getAction() == MotionEvent.ACTION_UP) {
-                    bt7.setBackgroundColor(Color.rgb(204, 255, 255));
+                    btn7.setBackgroundColor(Color.rgb(204, 255, 255));
                 }
                 return false;
             }
         });
 
-        bt8.setOnTouchListener(new View.OnTouchListener() {
+        btn8.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View view, MotionEvent motionEvent) {
                 if (motionEvent.getAction() == MotionEvent.ACTION_UP) {
-                    bt8.setBackgroundColor(Color.rgb(204, 255, 255));
+                    btn8.setBackgroundColor(Color.rgb(204, 255, 255));
                 }
                 return false;
             }
         });
 
-        bt9.setOnTouchListener(new View.OnTouchListener() {
+        btn9.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View view, MotionEvent motionEvent) {
                 if (motionEvent.getAction() == MotionEvent.ACTION_UP) {
-                    bt9.setBackgroundColor(Color.rgb(204, 255, 255));
+                    btn9.setBackgroundColor(Color.rgb(204, 255, 255));
                 }
                 return false;
             }
         });
 
-        bt10.setOnTouchListener(new View.OnTouchListener() {
+        btn10.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View view, MotionEvent motionEvent) {
                 if (motionEvent.getAction() == MotionEvent.ACTION_UP) {
-                    bt10.setBackgroundColor(Color.rgb(204, 255, 255));
+                    btn10.setBackgroundColor(Color.rgb(204, 255, 255));
                 }
                 return false;
             }
         });
 
-        bt11.setOnTouchListener(new View.OnTouchListener() {
+        btn11.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View view, MotionEvent motionEvent) {
                 if (motionEvent.getAction() == MotionEvent.ACTION_UP) {
-                    bt11.setBackgroundColor(Color.rgb(204, 255, 255));
+                    btn11.setBackgroundColor(Color.rgb(204, 255, 255));
                 }
                 return false;
             }
         });
-        reset.setOnTouchListener(new View.OnTouchListener() {
+
+        btn12.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View view, MotionEvent motionEvent) {
                 if (motionEvent.getAction() == MotionEvent.ACTION_UP) {
-                    bt1.setBackgroundColor(Color.rgb(255, 250, 205));
+                    btn12.setBackgroundColor(Color.rgb(204, 255, 255));
                 }
                 return false;
             }
-        });*/
+        });
+
+        next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(),FourthActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
