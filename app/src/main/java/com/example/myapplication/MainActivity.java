@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
                button.setOnClickListener(new View.OnClickListener() {
                    @Override
                    public void onClick(View view) {
-                       star.setText(str + "점 입니다!");
+                       Toast.makeText(getApplicationContext(),str+"점 입니다.\n좋은 의견 내주셔서 감사합니다 :-)",Toast.LENGTH_SHORT).show();
                        dialog.dismiss();
                    }
                });
