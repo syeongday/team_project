@@ -184,7 +184,7 @@
         android:layout_width="227dp"
         android:layout_height="55dp"
         android:layout_marginStart="92dp"
-        android:layout_marginTop="112dp"
+        android:layout_marginTop="100dp"
         android:background="@drawable/border4"
         android:text="🔍 결과 보기 🔍"
         android:textColor="@color/white"

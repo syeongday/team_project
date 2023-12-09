@@ -9,9 +9,13 @@
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="49dp"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="16dp"
         android:text="Button"
+        android:textSize="23sp"
+        android:background="#FFFACD"
+        app:backgroundTint="#FFFACD"
+        android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -20,19 +24,26 @@
         android:layout_width="wrap_content"
         android:layout_height="49dp"
         android:layout_marginTop="16dp"
+        android:layout_marginStart="42dp"
         android:text="Button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="23sp"
+        android:background="#FFFACD"
+        app:backgroundTint="#FFFACD"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/button4"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button6"
         android:layout_width="wrap_content"
         android:layout_height="49dp"
-        android:layout_marginStart="36dp"
+        android:layout_marginStart="42dp"
         android:layout_marginTop="16dp"
         android:text="Button"
+        android:textSize="23sp"
+        android:background="#FFFACD"
+        app:backgroundTint="#FFFACD"
+        android:textColor="@color/black"
         app:layout_constraintStart_toEndOf="@+id/button5"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -40,9 +51,13 @@
         android:id="@+id/button7"
         android:layout_width="wrap_content"
         android:layout_height="49dp"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="12dp"
         android:text="Button"
+        android:textSize="23sp"
+        android:background="#FFFACD"
+        app:backgroundTint="#FFFACD"
+        android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button4" />
 
@@ -50,28 +65,37 @@
         android:id="@+id/button8"
         android:layout_width="wrap_content"
         android:layout_height="49dp"
-        android:layout_marginTop="17dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="12dp"
         android:text="Button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="23sp"
+        android:background="#FFFACD"
+        app:backgroundTint="#FFFACD"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/button7"
         app:layout_constraintTop_toBottomOf="@+id/button5" />
 
     <Button
         android:id="@+id/button9"
         android:layout_width="wrap_content"
         android:layout_height="49dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="12dp"
         android:text="처음으로"
+        android:textSize="24sp"
+        android:background="@drawable/border4"
+        app:backgroundTint="#FF9999"
+        android:textColor="@color/white"
         app:layout_constraintStart_toEndOf="@+id/button8"
         app:layout_constraintTop_toBottomOf="@+id/button6" />
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="411dp"
-        android:layout_height="436dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="410dp"
+        android:layout_height="648dp"
+        android:layout_marginTop="16dp"
         android:text="여기에 나옴"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button8" />
 </androidx.constraintlayout.widget.ConstraintLayout>

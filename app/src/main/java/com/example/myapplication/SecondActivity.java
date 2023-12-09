@@ -131,6 +131,12 @@ public class SecondActivity extends Activity {
             }
         });
 
+        radioButton1.setTypeface(typeface);
+        radioButton2.setTypeface(typeface);
+        radioButton3.setTypeface(typeface);
+        radioButton4.setTypeface(typeface);
+        radioButton5.setTypeface(typeface);
+        radioButton6.setTypeface(typeface);
 
     }
 }
