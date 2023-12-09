@@ -6,6 +6,8 @@ import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -35,6 +37,14 @@ public class SecondActivity extends Activity {
         imageButton6 = (ImageButton)findViewById(R.id.imageButton6);
         textView = (TextView)findViewById(R.id.textView);
         airplane = (ImageButton)findViewById(R.id.imageButton7) ;
+        RadioGroup radioGroup = (RadioGroup) findViewById(R.id.radiogroup);
+        RadioButton radioButton1 = (RadioButton) findViewById(R.id.radioButton);
+        RadioButton radioButton2 = (RadioButton) findViewById(R.id.radioButton2);
+        RadioButton radioButton3 = (RadioButton) findViewById(R.id.radioButton3);
+        RadioButton radioButton4 = (RadioButton) findViewById(R.id.radioButton4);
+        RadioButton radioButton5 = (RadioButton) findViewById(R.id.radioButton5);
+        RadioButton radioButton6 = (RadioButton) findViewById(R.id.radioButton6);
+
 
         Typeface typeface = Typeface.createFromAsset(getAssets(),"mongmyfont.ttf");
         textView.setTypeface(typeface);
@@ -80,11 +90,38 @@ public class SecondActivity extends Activity {
             }
         });
 
+        Intent Inintent = new Intent(getApplicationContext(),ThirdActivity.class);
+
         airplane.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(),ThirdActivity.class);
-                startActivity(intent);
+                startActivity(Inintent);
+            }
+        });
+
+        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                switch (radioGroup.getCheckedRadioButtonId()){
+                    case R.id.radioButton:
+                        Inintent.putExtra("nara","northamerica");
+                        break;
+                    case R.id.radioButton2:
+                        Inintent.putExtra("nara","southamerica");
+                        break;
+                    case R.id.radioButton3:
+                        Inintent.putExtra("nara","africa");
+                        break;
+                    case R.id.radioButton4:
+                        Inintent.putExtra("nara","eu");
+                        break;
+                    case R.id.radioButton5:
+                        Inintent.putExtra("nara","asia");
+                        break;
+                    case R.id.radioButton6:
+                        Inintent.putExtra("nara","os");
+                        break;
+                }
             }
         });
 

@@ -10,8 +10,10 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class ThirdActivity extends Activity {
+    private int count = 0;
     @SuppressLint("ClickableViewAccessibility")
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -179,12 +181,167 @@ public class ThirdActivity extends Activity {
             }
         });
 
+        Intent intent = new Intent(getApplicationContext(), FourthActivity.class);
+
+
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(),FourthActivity.class);
-                startActivity(intent);
+                if(count == 3){
+                    startActivity(intent);
+                }
+                else{
+                    Toast.makeText(getApplicationContext(),"키워드를 선택하고 다시 눌러주세요!",Toast.LENGTH_SHORT).show();
+                }
             }
         });
+
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                intent.putExtra("음식","미슐랭");
+                btn2.setClickable(false);
+                btn3.setClickable(false);
+                count++;
+            }
+        });
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                intent.putExtra("음식","디저트");
+                btn1.setClickable(false);
+                btn3.setClickable(false);
+                count++;
+            }
+        });
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                intent.putExtra("음식","술");
+                btn1.setClickable(false);
+                btn2.setClickable(false);
+                count++;
+            }
+        });
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                intent.putExtra("자연","자연경관");
+                btn5.setClickable(false);
+                btn6.setClickable(false);
+                btn7.setClickable(false);
+                btn8.setClickable(false);
+                count++;
+            }
+        });
+        btn5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                intent.putExtra("자연","등산");
+                btn4.setClickable(false);
+                btn6.setClickable(false);
+                btn7.setClickable(false);
+                btn8.setClickable(false);
+                count++;
+            }
+        });
+        btn6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                intent.putExtra("자연","바다");
+                btn4.setClickable(false);
+                btn5.setClickable(false);
+                btn7.setClickable(false);
+                btn8.setClickable(false);
+                count++;
+            }
+        });
+        btn7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                intent.putExtra("자연","온천");
+                btn4.setClickable(false);
+                btn5.setClickable(false);
+                btn6.setClickable(false);
+                btn8.setClickable(false);
+                count++;
+            }
+        });
+        btn8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                intent.putExtra("자연","배낭여행");
+                btn4.setClickable(false);
+                btn5.setClickable(false);
+                btn6.setClickable(false);
+                btn7.setClickable(false);
+                count++;
+            }
+        });
+        btn9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                intent.putExtra("오락","축제");
+                btn10.setClickable(false);
+                btn11.setClickable(false);
+                btn12.setClickable(false);
+                count++;
+            }
+        });
+        btn10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                intent.putExtra("오락","테마파크");
+                btn9.setClickable(false);
+                btn11.setClickable(false);
+                btn12.setClickable(false);
+                count++;
+            }
+        });
+        btn11.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                intent.putExtra("오락","놀이공원");
+                btn9.setClickable(false);
+                btn10.setClickable(false);
+                btn12.setClickable(false);
+                count++;
+            }
+        });
+        btn12.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                intent.putExtra("오락","랜드마크");
+                btn9.setClickable(false);
+                btn10.setClickable(false);
+                btn11.setClickable(false);
+                count++;
+            }
+        });
+
+
+        Intent inIntent = getIntent();
+        String NARA = (inIntent.getStringExtra("nara"));
+
+        switch (NARA) {
+            case "northamerica":
+                intent.putExtra("nara", "northamerica");
+                break;
+            case "southamerica":
+                intent.putExtra("nara", "southamerica");
+                break;
+            case "africa":
+                intent.putExtra("nara", "africa");
+                break;
+            case "eu":
+                intent.putExtra("nara", "eu");
+                break;
+            case "asia":
+                intent.putExtra("nara", "asia");
+                break;
+            case "os":
+                intent.putExtra("nara", "os");
+                break;
+        }
     }
 }

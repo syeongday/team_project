@@ -10,8 +10,10 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class FourthActivity extends Activity {
+    private int count = 0;
     @SuppressLint("ClickableViewAccessibility")
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -136,13 +138,173 @@ public class FourthActivity extends Activity {
                 startActivity(intent);
             }
         });
+        Intent intent = new Intent(getApplicationContext(), FifthActivity.class);
 
         conc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), FifthActivity.class);
-                startActivity(intent);
+                if(count == 2){
+                    startActivity(intent);
+                }
+                else{
+                    Toast.makeText(getApplicationContext(),"키워드를 선택하고 다시 눌러주세요!",Toast.LENGTH_SHORT).show();
+                }
             }
         });
+
+        btn13.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                intent.putExtra("문화","전통");
+                btn14.setClickable(false);
+                btn15.setClickable(false);
+                btn16.setClickable(false);
+                count++;
+            }
+        });
+        btn14.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                intent.putExtra("문화","역사");
+                btn13.setClickable(false);
+                btn15.setClickable(false);
+                btn16.setClickable(false);
+                count++;
+            }
+        });
+        btn15.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                intent.putExtra("문화","종교");
+                btn13.setClickable(false);
+                btn14.setClickable(false);
+                btn16.setClickable(false);
+                count++;
+            }
+        });
+        btn16.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                intent.putExtra("문화","예술");
+                btn13.setClickable(false);
+                btn14.setClickable(false);
+                btn15.setClickable(false);
+                count++;
+            }
+        });
+        btn17.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                intent.putExtra("기타","시장");
+                btn18.setClickable(false);
+                btn19.setClickable(false);
+                btn20.setClickable(false);
+                count++;
+            }
+        });
+        btn18.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                intent.putExtra("기타","호캉스");
+                btn17.setClickable(false);
+                btn19.setClickable(false);
+                btn20.setClickable(false);
+                count++;
+            }
+        });
+        btn19.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                intent.putExtra("기타","스포츠");
+                btn17.setClickable(false);
+                btn18.setClickable(false);
+                btn20.setClickable(false);
+                count++;
+            }
+        });
+        btn20.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                intent.putExtra("기타","쇼핑");
+                btn17.setClickable(false);
+                btn18.setClickable(false);
+                btn19.setClickable(false);
+                count++;
+            }
+        });
+
+
+        Intent inIntent = getIntent();
+        String NARA = (inIntent.getStringExtra("nara"));
+        String Food = (inIntent.getStringExtra("음식"));
+        String Natrual = (inIntent.getStringExtra("자연"));
+        String Game = (inIntent.getStringExtra("오락"));
+
+        switch (NARA) {
+            case "northamerica":
+                intent.putExtra("nara", "northamerica");
+                break;
+            case "southamerica":
+                intent.putExtra("nara", "southamerica");
+                break;
+            case "africa":
+                intent.putExtra("nara", "africa");
+                break;
+            case "eu":
+                intent.putExtra("nara", "eu");
+                break;
+            case "asia":
+                intent.putExtra("nara", "asia");
+                break;
+            case "os":
+                intent.putExtra("nara", "os");
+                break;
+        }
+
+        switch (Food) {
+            case "미슐랭":
+                intent.putExtra("음식", "미슐랭");
+                break;
+            case "디저트":
+                intent.putExtra("음식", "디저트");
+                break;
+            case "술":
+                intent.putExtra("음식", "술");
+                break;
+        }
+
+        switch (Natrual) {
+            case "자연경관":
+                intent.putExtra("자연", "자연경관");
+                break;
+            case "등산":
+                intent.putExtra("자연", "등산");
+                break;
+            case "바다":
+                intent.putExtra("자연", "바다");
+                break;
+            case "온천":
+                intent.putExtra("자연", "온천");
+                break;
+            case "배낭여행":
+                intent.putExtra("자연", "배낭여행");
+                break;
+        }
+
+        switch (Game) {
+            case "축제":
+                intent.putExtra("오락", "축제");
+                break;
+            case "테마파크":
+                intent.putExtra("오락", "테마파크");
+                break;
+            case "놀이공원":
+                intent.putExtra("오락", "놀이공원");
+                break;
+            case "랜드마크":
+                intent.putExtra("오락", "랜드마크");
+                break;
+        }
+
     }
 }
