@@ -10,6 +10,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
+import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -33,7 +34,7 @@ public class FourthActivity extends Activity {
 
         TextView textView4;
         Button conc;
-        ProgressBar seekbar3;
+        SeekBar seekbar3;
 
         textView4 = findViewById(R.id.textView4);
         conc = findViewById(R.id.conc_btn);

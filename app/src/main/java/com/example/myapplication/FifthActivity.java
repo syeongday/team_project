@@ -109,7 +109,7 @@ public class FifthActivity extends Activity {
         }else if(NARA.equals("southamerica") && Food.equals("디저트")){
             first_button.setText("디저트");
             textView.setText("");
-        }else if(NARA.equals("southamerica") && Food.equals("술")){
+        }else if(NARA.equals("southamerica") && Food.equals("술")) {
             first_button.setText("술");
             textView.setText("");
         }

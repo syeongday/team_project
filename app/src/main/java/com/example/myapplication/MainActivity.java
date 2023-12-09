@@ -3,6 +3,8 @@ package com.example.myapplication;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Dialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.media.Image;
 import android.media.MediaPlayer;
@@ -11,13 +13,18 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.ImageView;
+import android.widget.RatingBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
     CheckBox checkBox;
-    Button start_button;
+    Button start_button, button;
     Button star;
+    Dialog dialog;
+    RatingBar ratingBar;
+    String str;
 
     MediaPlayer mediaPlayer;
 
@@ -44,11 +51,30 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+
         star.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                
+               dialog = new Dialog(MainActivity.this);
+               dialog.setContentView(R.layout.dialog);
+               ratingBar = (RatingBar) dialog.findViewById(R.id.ratingBar);
+               button = (Button) dialog.findViewById(R.id.button11);
 
+               button.setOnClickListener(new View.OnClickListener() {
+                   @Override
+                   public void onClick(View view) {
+                       star.setText(str + "점 입니다!");
+                       dialog.dismiss();
+                   }
+               });
+               ratingBar.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
+                   @Override
+                   public void onRatingChanged(RatingBar ratingBar, float v, boolean b) {
+                       str = String.valueOf(v);
+                   }
+               });
+               dialog.show();
             }
         });
     }

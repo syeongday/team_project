@@ -30,7 +30,7 @@ public class SecondActivity extends Activity {
         ImageButton imageButton6;
         TextView textView;
         ImageButton airplane;
-        ProgressBar seekbar1;
+        SeekBar seekbar1;
 
         imageButton1 = (ImageButton)findViewById(R.id.imageButton1);
         imageButton2 = (ImageButton)findViewById(R.id.imageButton2);
