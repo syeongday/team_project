@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -37,9 +38,13 @@ public class ThirdActivity extends Activity {
 
         Button next;
         TextView textView2;
+        ProgressBar seekbar2;
 
         next = findViewById(R.id.next_btn);
         textView2 = findViewById(R.id.textView2);
+        seekbar2 = findViewById(R.id.seekBar2);
+
+        seekbar2.setProgress(50);
 
         // 폰트 적용
         Typeface typeface = Typeface.createFromAsset(getAssets(), "mongsugargothic.ttf");

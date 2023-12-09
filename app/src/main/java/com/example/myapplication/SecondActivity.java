@@ -6,8 +6,10 @@ import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.ProgressBar;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.SeekBar;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -28,6 +30,7 @@ public class SecondActivity extends Activity {
         ImageButton imageButton6;
         TextView textView;
         ImageButton airplane;
+        ProgressBar seekbar1;
 
         imageButton1 = (ImageButton)findViewById(R.id.imageButton1);
         imageButton2 = (ImageButton)findViewById(R.id.imageButton2);
@@ -44,7 +47,10 @@ public class SecondActivity extends Activity {
         RadioButton radioButton4 = (RadioButton) findViewById(R.id.radioButton4);
         RadioButton radioButton5 = (RadioButton) findViewById(R.id.radioButton5);
         RadioButton radioButton6 = (RadioButton) findViewById(R.id.radioButton6);
+        seekbar1 = (SeekBar) findViewById(R.id.seekBar1);
 
+
+        seekbar1.setProgress(25);
 
         Typeface typeface = Typeface.createFromAsset(getAssets(),"mongmyfont.ttf");
         textView.setTypeface(typeface);

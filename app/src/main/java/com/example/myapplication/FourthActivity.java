@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -31,10 +32,14 @@ public class FourthActivity extends Activity {
         btn20 = findViewById(R.id.btn20);
 
         TextView textView4;
-        Button pre, conc;
+        Button conc;
+        ProgressBar seekbar3;
+
         textView4 = findViewById(R.id.textView4);
-        pre = findViewById(R.id.pre_btn);
         conc = findViewById(R.id.conc_btn);
+        seekbar3 = findViewById(R.id.seekBar3);
+
+        seekbar3.setProgress(75);
 
         Typeface typeface = Typeface.createFromAsset(getAssets(), "mongsugargothic.ttf");
         btn13.setTypeface(typeface);
@@ -47,7 +52,6 @@ public class FourthActivity extends Activity {
         btn20.setTypeface(typeface);
         Typeface typeface1 = Typeface.createFromAsset(getAssets(), "mongmyfont.ttf");
         textView4.setTypeface(typeface1);
-        pre.setTypeface(typeface1);
         conc.setTypeface(typeface1);
 
         // 버튼 클릭시 색상 변경
@@ -131,13 +135,6 @@ public class FourthActivity extends Activity {
             }
         });
 
-        pre.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(),ThirdActivity.class);
-                startActivity(intent);
-            }
-        });
         Intent intent = new Intent(getApplicationContext(), FifthActivity.class);
 
         conc.setOnClickListener(new View.OnClickListener() {

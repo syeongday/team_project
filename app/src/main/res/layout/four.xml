@@ -16,10 +16,10 @@
         android:textSize="20sp"
         app:fontFamily="@font/mongmyfont"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/seekBar" />
+        app:layout_constraintTop_toBottomOf="@+id/seekBar3" />
 
     <SeekBar
-        android:id="@+id/seekBar"
+        android:id="@+id/seekBar3"
         android:layout_width="371dp"
         android:layout_height="21dp"
         android:layout_marginStart="21dp"
@@ -184,7 +184,7 @@
         android:layout_width="227dp"
         android:layout_height="55dp"
         android:layout_marginStart="92dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="112dp"
         android:background="@drawable/border4"
         android:text="🔍 결과 보기 🔍"
         android:textColor="@color/white"
@@ -192,21 +192,6 @@
         app:backgroundTint="#FF9999"
         app:fontFamily="@font/mongmyfont"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pre_btn" />
-
-    <Button
-        android:id="@+id/pre_btn"
-        android:layout_width="120dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="144dp"
-        android:layout_marginTop="428dp"
-        android:background="@drawable/border6"
-        android:text="이전 장"
-        android:textColor="@color/black"
-        android:textSize="24sp"
-        app:backgroundTint="#FFE4E1"
-        app:fontFamily="@font/mongmyfont"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/btn20" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
