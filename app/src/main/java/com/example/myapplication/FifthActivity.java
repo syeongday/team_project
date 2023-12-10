@@ -46,7 +46,17 @@ public class FifthActivity extends Activity {
             first_button.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    textView.setText("");
+                    textView.setText("☞ The Inn at Little Washington\n" +
+                            "\n" +
+                            "격조 높은 시설과 서비스를 인정받아 ‘를레 앤 샤토’ 문장을 수여한 레스토랑이다. ‘를레 앤 샤토’는 유럽 각지에 분포된 부티크 호텔과 프리미엄 레스토랑을 묶은 국제 커뮤니티로 최고의 레스토랑 인증서다. 패트릭 오코넬 쉐프의 솜씨를 맛보기 위해 영국 여왕과 스페인 왕실도 발걸음할 정도로 유명한 식당이다.\n" +
+                            "\n" +
+                            "☞ Atelier Crenn\n" +
+                            "\n" +
+                            "아틀리에 크렌은 미국 최초의 미쉐린 3스타 여성 셰프인 도미닉 크렌(Dominque Crenn)이 이끄는 모던 프렌치 레스토랑이다. 도미닉 셰프는 시적인 요리(Poetic Culinaria)를 주제로 요리를 시로 형상화 한 코스요리를 선보인다.\n" +
+                            "\n" +
+                            "☞ SingleThread\n" +
+                            "\n" +
+                            "미국에 있는 개업 2년 만에 미쉐린 3스타의 영예를 안은 싱글 스레드는 셰프인 남편과 농장 관리 책임자인 아내가 이끄는 전통 일식 레스토랑이다. 농장에서 재배한 신선한 식재료를 사용해 가이세키, 스시 또는 스키야키 등 최고급 일식 요리를 제공한다.");
                 }
             });
         }else if(NARA.equals("northamerica") && Food.equals("디저트")){
@@ -54,7 +64,17 @@ public class FifthActivity extends Activity {
             first_button.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    textView.setText("");
+                    textView.setText("☞ 브라우니(Brownies), 미국\n" +
+                            "\n" +
+                            "가장 오래된 레시피는 1906년에 발행된 패니 파머=의 “보스톤 요리학교 요리책”에서 달지 않은 초콜릿으로 쫀득한 질감의 브라우니를 만드는 법이었다. 그 후로 천년이상, 브라우니는 대표적인 디저트로서 많은 아이스크림의 형태이자, 다양한 맛의 상징이 되었다.\n" +
+                            "\n" +
+                            "☞ 초코칩 쿠키(Chocolate Chip Cookies), 미국\n" +
+                            "\n" +
+                            "대표적인 미국의 간식이다. 기본적인 크림버터 쿠키의 레시피로부터 믿을 수 없도록 여러가지 모습의 다양한 쿠키들이 탄생했다.  바삭한 가장자리를 느끼다보면 어느새 부드럽고 살살 녹은 가운데자리의 질감을 느끼게 된다.\n" +
+                            "\n" +
+                            "☞ 코코넛 케이크(Coconut Cake), 미국 남부\n" +
+                            "\n" +
+                            "탱글탱글한 버터 바닐라 파운드 케이크에 채썬 코코넛을 높게 올리고 7분 프로스팅 크림을 사용하는 이것은 전통적인 미국 남부 방식 디저트다. 빠지지 않는 모든 미국인의 대표 간식 중 하나라고 할 수 있다. 코코넛 케이크만의 독특한 형태는 미국에서 유래된 것이다.");
                 }
             });
         }else if(NARA.equals("northamerica") && Food.equals("술")){
@@ -62,7 +82,17 @@ public class FifthActivity extends Activity {
             first_button.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    textView.setText("");
+                    textView.setText("☞ 버번 위스키(버번)\n" +
+                            "\n" +
+                            "미국 켄터키주 동북부의 지명인 ‘버번(Bourbon)’에서 생산되는 위스키를 바로 ‘버번 위스키’라 부른다. 옥수수를 주재료로 활용해 독특한 단맛을 가진 게 특징인 이 증류주는, 타 위스키와는 달리 매년 새 오크통(참나무통) 내부를 불에 그슬려 숙성시키기 때문에 바닐라 풍미마저 선사한다.\n" +
+                            "\n" +
+                            "☞ 데킬라\n" +
+                            "\n" +
+                            "멕시코에는 테킬라 마을이 있다. 테킬라 마을은 할리스코 주에 위치해 있다. 2가지 투어를 할 수 있는데 하루 반나절 소요되는 익스프레스 투어는 ‘테킬라 공장 , 테킬라 농장, 테킬라 저장소, 마리아치 공연 등이 포함되고 언제든지 테킬라 시음이 가능하다.\n" +
+                            "\n" +
+                            "☞ 맥주\n" +
+                            "\n" +
+                            "미국 맥주 도시로 유명한 그랜드래피즈는 30분 이내 차량 거리에 40개 이상의 아티잔 브루어리가 있어 모두를 만족시킬 수 있는 다양한 종류의 수제 맥주를 자랑한다. 여러 대회에서 수상한 경력을 통해 ‘맥주 애호가들의 천국’이라는 명성을 쌓아왔다.");
                 }
             });
         }
@@ -97,7 +127,13 @@ public class FifthActivity extends Activity {
             second_button.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    textView.setText("");
+                    textView.setText("☞ 그랜드 프리즈매틱 스프링 Grand Prismatic Spring\n" +
+                            "\n" +
+                            "미국 옐로스톤 국립공원에 위치한 그랜드 프리즈매틱 스프링은 미국에서 가장 큰 규모의 온천이다. 약 60만년 전 대량의 마그마가 분출하면서 지각이 함몰되며 생긴 칼데라호이다. 빨강, 주황, 초록 등 다양한 색을 보여주는 특이하는 곳이며 과학자들이 주목하는 장소이기도 하다. 다양한 색이 나오는 이유는 수심과 빛의 산란 현상, 물속에 서식하는 박테리아 종류 때문이다. \n" +
+                            "\n" +
+                            "☞ 미에테 핫 스프링스\n" +
+                            "\n" +
+                            "장엄한 로키산맥으로 둘러싸인 온천 수영장을 만날 수 있는 알버타 재스퍼 국립공원(Jasper National Park)의 ‘미에테 핫 스프링스(Miette Hot Springs)’는 캐나다를 대표하는 온천이다. 원수의 온도는 54도지만, 수영장 온수는 항상 40도에 맞추고 있다. 수세기동안 황산염, 칼슘, 마그네슘이 풍부한 물의 효과를 증명한 온천으로, 온천으로 가는 동안 드라이브 즐기며 야생 동물을 마주하며 멋진 풍광을 즐길 수 있다.");
                 }
             });
         }else if(NARA.equals("northamerica") && Natural.equals("배낭여행")){
@@ -115,7 +151,17 @@ public class FifthActivity extends Activity {
             third_button.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    textView.setText("");
+                    textView.setText("☞ 미국 하와이 아로하 페스티벌\n" +
+                            "\n" +
+                            "알로하 페스티벌은 하와이에서 열리는 행사로 9월 5일부터 26일 동안 개최가 된다.  축제는 하와이를 찾아오는 이방인들을 따스하게 맞아주기 위해 시작했다고 한다. 초대형 트레일러 트럭과 하와이 왕족들의 모습 등 여러 볼거리가 많다.\n" +
+                            "\n" +
+                            "☞ 멕시코의 디아 데 로스 무에르토스\n" +
+                            "\n" +
+                            "망자의 날 혹은 죽은 자의 날로 불리며 망자를 기리는 멕시코의 기념일이다. 죽은 친족과 사랑하는 사람들이 잠시나마 현생으로 돌아오는 것을 기리는 멕시코의 중요한 축일이다. 가족들은 묘지에서 집에 이르는 길에 꽃잎과 촛불 등을 놓아 영혼들이 현생으로 돌아올 수 있도록 도와준다. 대표적인 영화로 <코코>가 있다.\n" +
+                            "\n" +
+                            "☞ 빛의 축제\n" +
+                            "\n" +
+                            "매년 밴쿠버에서 개최되는 빛의 축제는 가장 크고 가장 유명한 축제로 세계에서 가장 오래 지속되는 해상 불꽃놀이 대회이다. 일반적으로 불꽃놀이 팀이 모여서 서로 경쟁하기 때문에 일주일 내내 개최된다. 빛의 축제는 일반적으로 매년 선택되는 특정 주제를 중심으로 진행된다.");
                 }
             });
         }else if(NARA.equals("northamerica") && Game.equals("테마파크")){
@@ -139,7 +185,17 @@ public class FifthActivity extends Activity {
             third_button.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    textView.setText("");
+                    textView.setText("☞ 자유의 여신상\n" +
+                            "\n" +
+                            "뉴욕시의 다운타운에서 맨해튼의 해변에 온 이민자와 방문객 모두를 환영하는 거대한 조각상인 자유의 여신상을 방문하는 것을 추천한다. 이 유명한 동상은 높이가 93m에 달하며 보이는 그대로 숨이 멎을 정도로 아름답다.\n" +
+                            "\n" +
+                            "☞ 나이아가라 폭포\n" +
+                            "\n" +
+                            "뉴욕시와 캐나다 사이의 경계에 걸쳐 있는 나이아가라 폭포는 북미에서 가장 높은 유량을 자랑한다. 세 개의 폭포로 이루어진 이 경이로운 자연은 순수한 아름다움과 귀중한 수력 발전 자원으로도 유명하다. 나이아가라 시닉 트롤리에서 주변 풍경과 어우러지는 나이아가라 폭포를 감상하는 것을 추천한다.\n" +
+                            "\n" +
+                            "☞ 금문교\n" +
+                            "\n" +
+                            "샌프란시스코에서 해안을 따라 조금만 위로 이동하면 금문교가 나온다. 놀랍도록 아름다운 붉은색의 거대한 다리는 샌프란시스코와 태평양 사이를 잇는다. 소위 ‘현대 세계의 경이로움’이라 불리는 이곳은 사진이 매우 많이 촬영된 장소이다.");
                 }
             });
         }
@@ -165,7 +221,17 @@ public class FifthActivity extends Activity {
             fourth_button.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    textView.setText("");
+                    textView.setText("☞ 성 요셉 대성당\n" +
+                            "\n" +
+                            "캐나다 퀘백에 있는 인도차이나의 수호성인 '성 요셉'의 이름을 따서 명명된 신고딕 양식의 가톨릭 성당이다. 1886년 프랑스 식민지 시절, 프랑스 파리의 '노트르담 대성당'을 모델로 설계되어, 우뚝 선 쌍둥이 종탑과 프랑스에서 공수한 스테인드글라스로 장식된 모습을 볼 수 있다. \n" +
+                            "\n" +
+                            "☞ 승리의 노트르담 대성당\n" +
+                            "\n" +
+                            "캐나다 퀘벡에 위치해 있는 북미에서 가장 오래된 성당이다. 승리의 노트르담 대성당은 캐나다에서 가장 오래된 석조 교회 중 하나로, 퀘벡의 역사가 시작된 곳에 자리잡고 있다. 퀘벡을 건설한 사뮈엘 드 샹플랭은 1608년 이곳에 최초의 정착지를 세웠다.\n" +
+                            "\n" +
+                            "☞ 그랜드 캐니언\n" +
+                            "\n" +
+                            "미국 창조과학 체험에서 빠지지 않고 등장하는 지역이 바로 그랜드 캐니언이다. 창조과학자들은 지질학자들이 150년 동안 그랜드 캐니언에 관해 연구했음에도 구체적 형성 원인과 주변 지각 변동 등에 대해 확실한 답을 내지 못한다고 말한다. 이 거대한 협곡의 생성은 노아의 방주와 대홍수와 관련 있다고 말한다.");
                 }
             });
         }else if(NARA.equals("northamerica") && Culture.equals("예술")){
@@ -191,7 +257,17 @@ public class FifthActivity extends Activity {
             fifth_button.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    textView.setText("");
+                    textView.setText("☞ 미션 인 호텔 앤드 스파\n" +
+                            "\n" +
+                            "미국에 위치한 미션 인 앤 스파는 고대 온천이 있는 곳에서 소노마 와인 컨트리의 독특한 휴양지를 제공한다. 경작지를 배경으로 한 스페인 식민지 부흥 고급 호텔이다. 호평을 받고 있는 레스토랑은 이 지역의 농장에서 식탁까지의 전통을 완벽하게 구현했다.\n" +
+                            "\n" +
+                            "☞ 벨라지오 호텔 : 분수 쇼 & 보타니컬 가든\n" +
+                            "\n" +
+                            "벨라지오 호텔은 전 세계 400개의 대표 호텔들이 가입한 ‘더 리딩 호텔스 오브 더 월드’에 소속돼 있다. 벨라지오 호텔에서 가장 유명한 것 중 하나가 벨라지오 분수 쇼다. 호텔 앞에 있는 라스베이거스의 랜드 마크, 벨라지오 분수에서는 정해진 시간마다 음악 분수 쇼를 진행한다.\n" +
+                            "\n" +
+                            "☞ 베네시안 호텔 : 그랜드 카날숍\n" +
+                            "\n" +
+                            "베네시안 호텔은 세계에서 두 번째로 큰 호텔로, 이곳은 물의 도시, 이탈리아 베네치아를 그대로 본 따 만든 호텔로, 언뜻 보기에는 호텔보다는 테마파크라는 말이 더 잘 어울린다. 이곳에는 인공 운하를 조성했는데, 베네치아를 그대로 옮겨놓은 모습을 볼 수 있다.");
                 }
             });
         }else if(NARA.equals("northamerica") && Gita.equals("스포츠")){
@@ -199,7 +275,17 @@ public class FifthActivity extends Activity {
             fifth_button.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    textView.setText("");
+                    textView.setText("☞ ‘슈퍼볼(Super Bowl)’\n" +
+                            "\n" +
+                            "전 세계에서 가장 많이 관람되는 스포츠인 슈퍼볼의 열기는 미국 전체를 마비시킬 정도로 뜨겁다. 경기 기간 동안에는 본 게임 외에도 현장 관람객들만이 누릴 수 있는 다양한 이벤트가 진행된다. \n" +
+                            "\n" +
+                            "☞ ‘NBA 올스타 게임(NBA All-Star Game)\n" +
+                            "\n" +
+                            "세계 최고의 프로 농구 리그인 NBA의 올스타 게임은 각 팀에서 최고의 실력을 가진 선수들이 참가하는 만큼 경기 기간 중 놓치지 말아야 할 하이라이트다. 올스타전은 평소 농구를 즐기는 팬이 아니더라도 경기장 안에서만 느낄 수 있는 뜨거운 열기와 흥겨운 분위기를 경험하는 것만으로도 관람할 가치가 충분하다.\n" +
+                            "\n" +
+                            "☞ ‘US오픈(U.S. Open)’\n" +
+                            "\n" +
+                            "US오픈 챔피언십은 남자 골프 경기의 4대 메이저 경기 중 하나로 꼽힌다. 본 경기에는 전 세계 TOP 60위 안에 드는 골프 선수들을 비롯해 연 내 진행된 주요 게임의 우승자들이 참여하게 된다.");
                 }
             });
         }else if(NARA.equals("northamerica") && Gita.equals("쇼핑")){
@@ -207,7 +293,17 @@ public class FifthActivity extends Activity {
             fifth_button.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    textView.setText("");
+                    textView.setText("☞ 몰 오브 아메리카, 블루밍턴, 미네소타\n" +
+                            "\n" +
+                            "미국에서 가장 큰 쇼핑몰 인 몰 오브 아메리카는 미니애폴리스 시내와 세인트 폴에서 불과 15 분 거리 인 미네소타 블루밍턴에 있다. 1992 년에 문을 연 몰 오브 아메리카는 연간 4 천만 명의 방문자가있는 세계에서 가장 많이 방문한 명소 중 하나이다. \n" +
+                            "\n" +
+                            "☞ 아벤 투라 몰, 아벤 투라, 플로리다\n" +
+                            "\n" +
+                            "세련되고 고급스러운 마이애미 지역에 위치한 아벤 투라 몰은 최신 유행의 현지인들이 고급 디자이너 옷을 찾는 곳이다. 1983 년부터 운영 된 플로리다의 쇼핑 기관으로 간주되는 3 층 쇼핑몰이다. 인상적인 300 개의 소매 공간과 6 개의 백화점으로 이루어져 있다.\n" +
+                            "\n" +
+                            "☞ 세인트 로렌스 시장\n" +
+                            "\n" +
+                            "캐나다에 있는 1803년 문을 열어 200년 이상의 전통을 가진 토론토 최초의 시장이다. 온타리오 각지와 더불어 캐나다 곳곳에서 재배된 식재료가 이곳으로 모여 '토론토의 부엌'이라고도 불린다. '노스 마켓'에서 매주 토요일에는 파머스 마켓이, 일요일에는 앤티크 마켓이 열려, 평소와는 색다른 구경거리를 즐길 수 있다.");
                 }
             });
         }
