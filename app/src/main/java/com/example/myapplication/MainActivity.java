@@ -1,14 +1,20 @@
 package com.example.myapplication;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.media.Image;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.view.ContextMenu;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -18,6 +24,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+
+    private TextView menu;
 
     CheckBox checkBox;
     Button start_button, button;
@@ -32,6 +40,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        menu = (TextView) findViewById(R.id.menu);
+        registerForContextMenu(menu);
+
 
         mediaPlayer = MediaPlayer.create(this, R.raw.music);
         mediaPlayer.setLooping(true);
@@ -77,5 +89,24 @@ public class MainActivity extends AppCompatActivity {
                dialog.show();
             }
         });
+
+    }
+
+    @Override
+    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu1, menu);
+    }
+
+    @Override
+    public boolean onContextItemSelected(@NonNull MenuItem item) {
+        // 더 추가할 수도 있으니까 switch 문으로 ...
+        switch (item.getItemId()) {
+            case R.id.exit:
+                finishAffinity();
+                System.runFinalization();
+                System.exit(0); // 모든 액티비티 종료 (앱 종료)
+        }
+        return super.onContextItemSelected(item);
     }
 }
