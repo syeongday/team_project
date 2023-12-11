@@ -52,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
         checkBox = (CheckBox) findViewById(R.id.checkBox);
         start_button = (Button) findViewById(R.id.button3);
         star = (Button) findViewById(R.id.button2);
+        button = (Button) findViewById(R.id.button);
 
         start_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -60,6 +61,14 @@ public class MainActivity extends AppCompatActivity {
                     Intent intent = new Intent(getApplicationContext(),SecondActivity.class);
                     startActivity(intent);
                 }
+            }
+        });
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent iintent = new Intent(getApplicationContext(),MyboxActivity.class);
+                startActivity(iintent);
             }
         });
 

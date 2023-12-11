@@ -25,6 +25,7 @@
         <activity android:name=".ThirdActivity" android:label="third 액티비티"></activity>
         <activity android:name=".FourthActivity" android:label="fourth 액티비티"></activity>
         <activity android:name=".FifthActivity" android:label="fifth 액티비티"></activity>
+        <activity android:name=".MyboxActivity" android:label="mybox 액티비티"></activity>
     </application>
 
 </manifest>
