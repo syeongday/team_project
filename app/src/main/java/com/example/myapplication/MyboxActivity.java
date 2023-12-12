@@ -2,6 +2,7 @@ package com.example.myapplication;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
@@ -14,7 +15,7 @@ public class MyboxActivity extends Activity {
 
     dbHelper mydbhelper;
     EditText editName, edit, editRes1, editRes2;
-    Button initB, insB, SearchB;
+    Button initB, insB, SearchB, first;
     SQLiteDatabase mysqlDB;
 
     public class dbHelper extends SQLiteOpenHelper {
@@ -45,6 +46,7 @@ public class MyboxActivity extends Activity {
         initB = (Button) findViewById(R.id.button10);
         insB = (Button) findViewById(R.id.button11);
         SearchB = (Button) findViewById(R.id.button12);
+        first = (Button)findViewById(R.id.button13);
 
         mydbhelper = new dbHelper(this);
         initB.setOnClickListener(new View.OnClickListener() {
@@ -84,5 +86,14 @@ public class MyboxActivity extends Activity {
                 mysqlDB.close();
             }
         });
+
+        first.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent firstintent = new Intent(getApplicationContext(),MainActivity.class);
+                startActivity(firstintent);
+            }
+        });
+
     }
 }

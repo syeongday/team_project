@@ -94,7 +94,7 @@
         android:layout_width="410dp"
         android:layout_height="648dp"
         android:layout_marginTop="16dp"
-        android:text="여기에 나옴"
+        android:text="버튼을 클릭해 주세요!"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button8" />

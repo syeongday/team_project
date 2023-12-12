@@ -38,12 +38,13 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         menu = (TextView) findViewById(R.id.menu);
         registerForContextMenu(menu);
-
 
         mediaPlayer = MediaPlayer.create(this, R.raw.music);
         mediaPlayer.setLooping(true);
