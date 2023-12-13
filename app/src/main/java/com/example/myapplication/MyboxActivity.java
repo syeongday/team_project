@@ -6,10 +6,12 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class MyboxActivity extends Activity {
 
@@ -17,6 +19,8 @@ public class MyboxActivity extends Activity {
     EditText editName, edit, editRes1, editRes2;
     Button initB, insB, SearchB, first;
     SQLiteDatabase mysqlDB;
+    TextView my_box, keword, tour;
+
 
     public class dbHelper extends SQLiteOpenHelper {
         public dbHelper(Context context){
@@ -46,6 +50,9 @@ public class MyboxActivity extends Activity {
         initB = (Button) findViewById(R.id.button10);
         insB = (Button) findViewById(R.id.button11);
         SearchB = (Button) findViewById(R.id.button12);
+        my_box = (TextView)findViewById(R.id.textView11);
+        keword = (TextView)findViewById(R.id.textView);
+        tour = (TextView)findViewById(R.id.textView10);
         first = (Button)findViewById(R.id.button13);
 
         mydbhelper = new dbHelper(this);
@@ -86,6 +93,19 @@ public class MyboxActivity extends Activity {
                 mysqlDB.close();
             }
         });
+
+
+        Typeface typeface = Typeface.createFromAsset(getAssets(), "mongsugargothic.ttf");
+        editName.setTypeface(typeface);
+        edit.setTypeface(typeface);
+        editRes1.setTypeface(typeface);
+        editRes2.setTypeface(typeface);
+        Typeface typeface1 = Typeface.createFromAsset(getAssets(), "mongmyfont.ttf");
+        initB.setTypeface(typeface1);
+        insB.setTypeface(typeface1);
+        SearchB.setTypeface((typeface1));
+        keword.setTypeface(typeface1);
+        tour.setTypeface(typeface1);
 
         first.setOnClickListener(new View.OnClickListener() {
             @Override
