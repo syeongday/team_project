@@ -100,6 +100,7 @@ public class MyboxActivity extends Activity {
         edit.setTypeface(typeface);
         editRes1.setTypeface(typeface);
         editRes2.setTypeface(typeface);
+
         Typeface typeface1 = Typeface.createFromAsset(getAssets(), "mongmyfont.ttf");
         initB.setTypeface(typeface1);
         insB.setTypeface(typeface1);
