@@ -44,7 +44,7 @@ public class MyboxActivity extends Activity {
 
         setTitle("데이터 베이스 실습");
         editName = (EditText) findViewById(R.id.editTextTextPersonName);
-        edit = (EditText) findViewById(R.id.editTextTextMultiLine2);
+        edit = (EditText) findViewById(R.id.editTextTextPersonName2);
         editRes1 = (EditText) findViewById(R.id.editTextTextMultiLine);
         editRes2 = (EditText) findViewById(R.id.editTextTextMultiLine2);
         initB = (Button) findViewById(R.id.button10);
@@ -100,6 +100,7 @@ public class MyboxActivity extends Activity {
         edit.setTypeface(typeface);
         editRes1.setTypeface(typeface);
         editRes2.setTypeface(typeface);
+        first.setTypeface(typeface);
 
         Typeface typeface1 = Typeface.createFromAsset(getAssets(), "mongmyfont.ttf");
         initB.setTypeface(typeface1);
